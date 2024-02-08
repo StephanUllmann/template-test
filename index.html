@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xxx-module-name-topic</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="module">
+      import DOMLogger from 'https://unpkg.com/@weyvern/dom-logger';
+      window.logger = new DOMLogger(document.getElementById('output'), true);
+    </script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="/assets/images/logo.svg" alt="WBS Coding School" />
+      </div>
+      <div>
+        <h1>Template exercise</h1>
+      </div>
+      <div>
+        Find the <code>index.js</code> file in the sidebar and let's work! To output to our special
+        console you can use <code>logger.log()</code> instead of <code>console.log()</code>. Check
+        <code>index.js</code> to see an example.
+      </div>
+    </header>
+    <main>
+      <div id="output"></div>
+    </main>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
